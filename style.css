@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    
+    
+
+}
+
+body *{
+    /*font-family*/
+   
+}
+
+/*ALL*/
+.container{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+/*MAIN/ASIDE*/
+.conteudo{
+    flex-direction: row;
+    display: flex;
+    
+}
+
+/*HEADER*/
+header{
+    
+    background-color: red;
+    display: flex;
+    
+
+}
+
+
+/*MAIN*/
+main{
+    background-color: blue;
+    flex: 1;
+}
+
+
+/*ASIDE*/
+aside{
+    background-color: green;
+    flex: 2;
+
+   
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: yellow;
+  
+}
+
+
+
+/*HOVER*/
+
+
+
+
+
+/*MEDIA SCREEN*/
+@media screen and (max-width:400px) {
+    
+}
