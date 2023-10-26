@@ -32,13 +32,51 @@ body *{
 
 /*HEADER*/
 header{
-    
+    display: flex;
     background-color: red;
     display: flex;
-    
+    margin: auto;
+    width: 80%;
+    height: 40px;
+    align-items: center;
+    position: relative;
+}   
 
+.logo-header-div{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    
 }
 
+
+
+.menu ul {
+   list-style: none;
+    display: flex;
+    gap: 30%;
+    
+}
+
+.icons ul{
+    list-style: none;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-30%);
+    
+}
+
+.btn-buscar{
+    content: url(./assets/Dress.svg);
+    
+}
+
+ 
 
 /*MAIN*/
 main{

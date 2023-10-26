@@ -15,7 +15,7 @@
     <section class="container">
         
         <header>
-            <div><img src="./assets/logo.png" alt="chair symbol logo">Marca</div>
+            <div class="logo-header-div"><img class="logo-img" src="./assets/logo.png" alt="chair symbol logo">Marca</div>
             <!--<div> Icons made by <a href="https://www.flaticon.com/authors/prashanth-rapolu-15" title="Prashanth Rapolu 15"> Prashanth Rapolu 15 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>-->
            
             <div class="menu">   
@@ -28,7 +28,19 @@
             </div>
 
             <div class="buscar">
-                <input type="text"> <i class="bi bi-search"></i>
+                <form>
+                    <label for="campo-de-pesquisa"></label>
+                    <input type="search" id="campo-de-pesquisa" name="pesquisa" placeholder="Search for Product">
+                    <button class="btn-buscar">
+                       
+                        <i class="bi bi-search"></i>
+                        <input class="" type="submit" value="">
+                       
+                    </button>
+                    
+
+                  </form>
+                  
             </div>
 
             <div class="icons">
@@ -69,11 +81,16 @@
 
         <footer>
            <!--VÍDEO-->
+            <div class="icons-footer">
+                <button ><img src="./assets/sofa.svg" alt="" class="sofa">Home & Garden</button>
+                <button><img src="./assets/watch.svg" alt="">Accessories</button>
+                <button><img src="./assets/Dress.svg" alt="">Woman's Clothing</button>
+                <button><img src="./assets/tshirt.svg" alt="">Man's Clothing</button>
+            </div>
 
-           <button ><img src="./assets/sofa.svg" alt="" class="sofa">Home & Garden</button>
-           <button><img src="./assets/watch.svg" alt="">Accessories</button>
-           <button><img src="./assets/Dress.svg" alt="">Woman's Clothing</button>
-           <button><img src="./assets/tshirt.svg" alt="">Man's Clothing</button>
+            <div class="next-arrow-icon">
+                <i class="bi bi-arrow-right-square-fill"></i>
+            </div>
         </footer>
 
 
