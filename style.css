@@ -54,6 +54,15 @@ aside{
 
    
 }
+.view-container{
+    border: 2px solid red;
+    width: 80%;
+    height: 200px;
+    margin-left: 15%;
+}
+.products{
+    width: 100px;
+}
 
 
 /*FOOTER*/
