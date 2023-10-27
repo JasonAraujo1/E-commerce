@@ -16,6 +16,10 @@ body *{
    
 }
 
+:root{
+    --background-search:#FAF7F2;
+}
+
 /*ALL*/
 .container{
  display: flex;
@@ -71,12 +75,24 @@ header{
     
 }
 
-.btn-buscar{
-    content: url(./assets/Dress.svg);
-    
+form{
+    background-color:var(--background-search);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 8px;
 }
 
+form input, button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
  
+
+
+
 
 /*MAIN*/
 main{
