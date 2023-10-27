@@ -56,6 +56,7 @@ header{
 
     position: relative;
     
+    flex: 1;
 }   
 
 .logo-header-div{
@@ -69,17 +70,24 @@ header{
 }
 
 
-
-
-
 .menu ul {/*lista dos icons da barra menu*/
    list-style: none;
     display: flex;
     gap: 30%;
+    cursor: pointer;
+
+
   
 }
 
-.icons ul{/*lista dos icons da barra menu*/
+.icons ul button{
+    border: none;
+    background-color: transparent;
+    color: var(--text-color-gray);
+    cursor: pointer;
+}
+
+.icons ul{/* icons da barra menu(coração, carrinho, profile)*/
     list-style: none;
     display: flex;
     
@@ -95,23 +103,30 @@ header{
 
 #campo-de-pesquisa{/*barra de pesquisa '|'*/
     color:var(--orange);
+    width: 300px;
+    overflow: hidden;
 }
 
 #campo-de-pesquisa::placeholder{/*texto da barra de pesquisa  */
     color:var(--gray-light);
     font-size: 12px;
-    padding: ;
-    
+    padding-left: 10px;
     
 }
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
 
 form{/*search*/
     background-color:var(--background-search);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 10px ;
-    justify-content: space-between;
+    padding: 6px 18px ;
+    justify-content:space-between;
+    
     border-radius: 8px;
 
     position: absolute;
@@ -120,20 +135,38 @@ form{/*search*/
     top: 50%;
     
 
-    width: 100%;
-    max-width: 300px;
+   
+    width: 50px;
 
+    flex: 1;
+
+    
+    
     
 }
 
-form input, .btn-buscar{/*search e button */
+
+form.expandir{
+    width: 250px;
+    transition: 0.9s;
+}
+
+
+form input, .btn-buscar{/*search button */
     background-color: transparent;
     border: none;
     outline: none;
     color: var(--gray-light);
+    
 }
 
+.btn-buscar{
+    margin-left: 15px
+}
 
+.bi-search{/*icon search*/
+    cursor: pointer;
+}
 
 
 /*MAIN*/
@@ -171,13 +204,46 @@ footer{
 
 /*HOVER*/
 
+.menu ul li:hover{
+    color: black;
+    transition: 0.2s;
+}
 
+.icons ul button:hover{
+    color: black;
+    transition: 0.2s;
+}
 
 
 
 /*MEDIA SCREEN*/
-@media screen and (max-width:400px) {
-    
+@media screen and (max-width:500px) {
+    .container{
+        position: relative;
+    }
+    .formulario{
+        position: absolute;
+        margin-top: 30px;
+        padding-left: 0px;
+        left: 1%;
+        z-index: 0;
+    }
+
+    form.expandir{
+        width: 180px;
+        transition: 0.9s;
+        display: flex;
+       
+    }
+
+    .icons{
+        position: absolute;
+        margin-top: 60px;
+        left: 100%;
+       
+       
+    }
+   
 }
 
 
