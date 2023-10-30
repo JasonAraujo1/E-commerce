@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="container">
@@ -74,7 +75,7 @@
                 <h1>50% OFF</h1>
                 <h2 class="discount"> DISCOUNT STOREWIDE</h2>
                 <br>
-                <a href="https://google.com">
+                <a href="#">
                     <button class="btn-buy">
                         <img src="./assets/buy.svg" alt="purse symbol">
                         <span class="txt-buy">Buy</span>
@@ -83,18 +84,46 @@
             </main>
     
     
-            <aside>
-                <div class="view-container">
-                </div>
+            <aside class="slider">
 
-                <div>
-                    <ul class="products-boxes">
-                        <li><img class="products" src="./assets/sapato.jpg" alt="green shoe photo"></li>
-                        <li><img class="products" src="./assets/sucos.jpg" alt="green juices photo"></li>
-                        <li><img class="products" src="./assets/camera.jpg" alt="white old school camera"></li>
-                    </ul>
+                <div class="slider-content">
+
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+
+                    <div class="slide-box primeiro">
+                        <img src="./assets/sapato.jpg" alt="shoes image">
+                    </div>
+
+                    <div class="slide-box">
+                        <img src="./assets/camera.jpg" alt="shoes image">
+                    </div>
+
+                    <div class="slide-box">
+                        <img src="./assets/sucos.jpg" alt="shoes image">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <div class="nav-manual"><!--label faz referencia aos inputs, os inputs servem como um ponte entre css e js para fazer uma leitura -->
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
                 </div>
+                  
+
+                    
             </aside>
+
+
+
+            
         </div>
         
 

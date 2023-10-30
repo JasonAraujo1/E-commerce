@@ -239,16 +239,51 @@ aside{
     background-color: green;
     flex: 2;
 
-   
 }
-.view-container{
-    border: 2px solid red;
-    width: 80%;
-    height: 200px;
-    margin-left: 15%;
+
+aside.slider{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 ;
+    overflow: hidden;
+} 
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+
 }
-.products{
-    width: 100px;
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box img{
+    width: 90%;
+}
+
+.nav-manual{/*bolinhas de navegação manual*/
+    position: absolute;
+    width: 70%;
+    margin-top: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 
