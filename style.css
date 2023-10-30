@@ -19,9 +19,10 @@ body *{
 :root{
     --background-search:rgb(250, 247, 242);
     --body-bg:#FFFFFF;
-    --text-color-gray:#707587;
+    --text-color-gray:#666A74;
     --gray-light:#B8B7B4;
     --orange:#F39050;
+    --btn-orange:#FB6D5D;
 }
 
 /*ALL*/
@@ -105,16 +106,17 @@ header{
     color:var(--orange);
     width: 300px;
     overflow: hidden;
+    padding-left: 10px;
 }
 
 #campo-de-pesquisa::placeholder{/*texto da barra de pesquisa  */
     color:var(--gray-light);
     font-size: 12px;
-    padding-left: 10px;
+    
     
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {/*'x' automático do form*/
     display: none;
 }
 
@@ -136,7 +138,7 @@ form{/*search*/
     
 
    
-    width: 50px;
+    width: 250px;
 
     flex: 1;
 
@@ -146,10 +148,7 @@ form{/*search*/
 }
 
 
-form.expandir{
-    width: 250px;
-    transition: 0.9s;
-}
+
 
 
 form input, .btn-buscar{/*search button */
@@ -171,8 +170,66 @@ form input, .btn-buscar{/*search button */
 
 /*MAIN*/
 main{
-    background-color: blue;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+main h1{/*50% off*/
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+font-size: 15vw; 
+max-width: 100%;
+color:var(--text-color-gray);
+
+
+}
+main h2{/*'sale'/'discount...'*/
+font-family: 'Playfair Display', serif;
+font-weight: 400; 
+font-size: 4vw; 
+max-width: 100%;
+color:var(--text-color-gray);
+}
+
+.discount{/*h2 'discount*/
+    font-style: italic;
+}
+
+main a{
+    text-decoration: none;/*sublinhado do texto 'buy'*/
+}
+
+.btn-buy{
+    background-color: var(--btn-orange);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+    width: 100px;
+    cursor: pointer;
+
+
+    
+}
+
+.txt-buy{
+    position: absolute;
+    transform: translateY(-40%);
+    top: 50%;
+    display: flex;
+    padding-left:30px;
+    
 }
 
 
@@ -220,6 +277,17 @@ footer{
 @media screen and (max-width:500px) {
     .container{
         position: relative;
+        
+    }
+
+    header{
+        width: 90%;
+        max-width: 100%;
+    }  
+
+    form{
+      
+        width: 160px;
     }
     .formulario{
         position: absolute;
@@ -229,12 +297,7 @@ footer{
         z-index: 0;
     }
 
-    form.expandir{
-        width: 180px;
-        transition: 0.9s;
-        display: flex;
-       
-    }
+
 
     .icons{
         position: absolute;
@@ -243,6 +306,9 @@ footer{
        
        
     }
+
+    
+   
    
 }
 
