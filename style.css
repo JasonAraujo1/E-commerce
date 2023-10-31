@@ -305,7 +305,7 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
 .nav-manual .manual-btn, .nav-auto div{/*linha em baixo das mini imagens*/
 
-    padding: 2px; /*largura da linha*/
+    padding: 1px; /*largura da linha*/
     margin: 8px 0;/*distância da linha da mini image*/
     
 }
