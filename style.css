@@ -29,6 +29,7 @@ body *{
 .container{
  display: flex;
  flex-direction: column;
+
  
 }
 
@@ -179,21 +180,25 @@ main{
     flex-direction: column;
     padding: 10px;
     
+    
 }
 
 main h1{/*50% off*/
 font-family: 'Playfair Display', serif;
 font-weight: 700;
-font-size: 15vw; 
-max-width: 100%;
+font-size: 8vw; 
+max-width: 50%;
 color:var(--text-color-gray);
+
+
+
 
 
 }
 main h2{/*'sale'/'discount...'*/
 font-family: 'Playfair Display', serif;
 font-weight: 400; 
-font-size: 4vw; 
+font-size: 2vw; 
 max-width: 100%;
 color:var(--text-color-gray);
 }
@@ -236,9 +241,8 @@ main a{
 
 /*ASIDE*/
 aside{
-    background-color: green;
     flex: 2;
-
+    position: relative;
 }
 
 aside.slider{
@@ -258,6 +262,7 @@ aside.slider{
 
 .slider-content input{
     display: none;
+    
 }
 
 .slide-box{
@@ -265,26 +270,76 @@ aside.slider{
     height: auto;
     position: relative;
     text-align: center;
+    transition: 1s;
+ 
 }
 
-.slide-box img{
-    width: 90%;
+.slide-box img{/*imagem grande slider*/
+    width: 40vw;
+    border-radius: 20px;
+   
+    
 }
 
-.nav-manual{/*bolinhas de navegação manual*/
+.nav-manual, .nav-auto{/*linha de navegação manual*/
     position: absolute;
-    width: 70%;
-    margin-top: 60%;
+    width:68vw; /*alinhamento das mini-imagens com a imagem grande*/
+    
     display: flex;
     justify-content: center;
+    gap: 10px;
+    bottom:2vh;
+    
+    
 }
 
-.nav-manual .manual-btn{
-    border: 1px solid red;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
+.nav-manual .manual-btn, .nav-auto div{/*linha em baixo das mini imagens*/
+
+    padding: 2px; /*largura da linha*/
+    margin: 5px 0;/*distância da linha da mini image*/
+   
 }
+
+.nav-auto div{
+    
+    width: 7vw;
+    margin:0 0.5vw;/*centralização linha vermelha*/
+    
+}
+
+
+.mini-photos{
+    width: 8vw;
+    border-radius: 10px;
+    opacity: 60%;
+    
+}
+
+
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{/*quando a classe 'radio estiver marcada, vai acontecer isso com as classes nav-auto e auto-btn*/
+    background-color: red;
+    transition: 1s;
+
+}
+
+
+
+
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+
+
+
 
 
 /*FOOTER*/
@@ -306,6 +361,19 @@ footer{
     color: black;
     transition: 0.2s;
 }
+
+.mini-photos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    opacity:1;
+}
+
+.mini-photos:not(hover){
+    transition: 0.5s;
+}
+
+
+
 
 
 
@@ -349,7 +417,24 @@ footer{
     .menu{
         margin-left:30px;
     }
-   
+
+    .nav-auto div{
+    
+        width: 7vw;
+        margin:0 0.09vw;/*centralização linha vermelha*/
+        margin: 0 18px;
+        
+    }
+    .slide-box img{/*imagem grande slider*/
+        width: 60vw;
+        
+    }
+
+    
+    .mini-photos{
+        width: 15vw; 
+        
+    }
    
 }
 
