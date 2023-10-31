@@ -1,0 +1,176 @@
+/*ASIDE*/
+aside{
+    flex: 2;
+    
+   
+    
+}
+
+aside.slider{/*box do aside/ ao redor do slider*/
+   
+    width: 100%;
+    
+    padding: 0  ;
+    overflow: hidden;
+    border-radius: 20px;
+        
+    max-height:600px;
+   
+    margin: 0 20px;
+ 
+    max-width: 50vw;
+
+    
+} 
+
+.slider-content{
+    width: 400%;
+    display: flex;
+    
+
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+    
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    transition: 1s;
+    
+}
+
+.slide-box img{/*imagem grande slider*/
+    width: 100%;
+    
+    border-radius: 20px;
+    min-width: 90%;
+    
+    
+  
+    
+}
+
+.nav-manual, .nav-auto{/*linha da navegação manual*/
+    width:50vw; /*alinhamento das mini-imagens com a imagem grande*/
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;/*distancia entre as mini-images*/
+   
+    position: absolute;
+   
+   bottom: 0;   
+   transform: translateY(110%);
+  
+
+    
+}
+
+.nav-auto{/*linha distância do mini images*/
+    position: absolute;
+   
+    bottom: -3%;   
+    transform: translateY(-50%);
+    
+}
+
+
+.nav-manual .manual-btn, .nav-auto div{/*linha em baixo das mini imagens*/
+
+    padding: 1px; /*largura da linha*/
+    margin: 8px 0;/*distância da linha da mini image*/
+ 
+}
+
+
+.nav-auto div{
+    
+    width: 7vw;
+    margin: 0 11px;/*centralização linha vermelha*/
+   
+    
+}
+
+
+.mini-photos{
+    width: 8vw;
+    border-radius: 10px;
+    opacity: 60%;
+   
+    
+}
+
+/*linha de transição mini-images*/
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{/*quando a classe 'radio estiver marcada, vai acontecer isso com as classes nav-auto e auto-btn*/
+    background-color:var(--btn-orange);
+    transition: 1s;
+    
+}
+
+
+
+
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+
+
+
+@media screen and (max-width:900px) {
+    
+
+    .nav-auto div{/*espaço entre linhas do mini images*/
+       margin: 0;
+        padding: 1px 33px;
+     
+    }
+
+    
+    .nav-manual, .nav-auto{/*linha da navegação manual*/
+        
+        width:49vw; /*alinhamento das mini-imagens com a imagem grande*/
+       
+    }
+
+
+    
+    .mini-photos{
+        width: 15vw; 
+        
+    }
+   
+   
+
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display:block ;
+    }
+
+
+
+    aside.slider{/*box do aside/ ao redor do slider*/
+        
+    
+    } 
+
+    
+    .slide-box img{
+        width: 140%;
+    }
+
+
+}

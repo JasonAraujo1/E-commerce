@@ -38,6 +38,8 @@ body *{
     flex-direction: row;
     display: flex;
     margin-top: 40px;/*distância aside e main do header*/
+    max-height: 60vh;
+    position: relative;
 }
 
 /*HEADER*/
@@ -239,116 +241,6 @@ main a{
 }
 
 
-/*ASIDE*/
-aside{
-    flex: 2;
-    
-  
-    
-}
-
-aside.slider{/*box do aside/ ao redor do slider*/
-   
-    width: 100%;
-    height:600px;
-    padding: 0  ;
-    overflow: hidden;
-     border-radius: 20px;
-  
-    margin:0 20px;
-   
-} 
-
-.slider-content{
-    width: 400%;
-    display: flex;
-
-}
-
-.slider-content input, .img-mobile{
-    display: none;
-    
-}
-
-.slide-box{
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
- 
-}
-
-.slide-box img{/*imagem grande slider*/
-    width: 100%;
-
-   border-radius: 20px;
-    min-width: 90%;
-    
-    
-  
-    
-}
-
-.nav-manual, .nav-auto{/*linha da navegação manual*/
-    position: absolute;
-    width:68vw; /*alinhamento das mini-imagens com a imagem grande*/
-    
-    display: flex;
-    justify-content: center;
-    gap: 10px;/*distancia entre as mini-images*/
-    top: 80vh;
-    
-    
-    
-}
-
-.nav-manual .manual-btn, .nav-auto div{/*linha em baixo das mini imagens*/
-
-    padding: 1px; /*largura da linha*/
-    margin: 8px 0;/*distância da linha da mini image*/
-    
-}
-
-.nav-auto div{
-    
-    width: 7vw;
-    margin: 0 11px;/*centralização linha vermelha*/
-   
-    
-}
-
-
-.mini-photos{
-    width: 8vw;
-    border-radius: 10px;
-    opacity: 60%;
-    
-    
-}
-
-/*linha de transição mini-images*/
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{/*quando a classe 'radio estiver marcada, vai acontecer isso com as classes nav-auto e auto-btn*/
-    background-color:var(--btn-orange);
-    transition: 1s;
-
-}
-
-
-
-
-
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
-}
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-
-
 
 
 
@@ -392,7 +284,7 @@ footer{
 
 
 /*MEDIA SCREEN*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:900px) {
     .container{
        
         
@@ -432,33 +324,10 @@ footer{
         margin-left:30px;
     }
 
-    .nav-auto div{
-    
-        width: 14vw;
-        margin: 0 4px;/*centralização linha vermelha*/
-        
-    }
-
-    
-    .nav-manual, .nav-auto{/*linha da navegação manual*/
-        
-        width:55vw; /*alinhamento das mini-imagens com a imagem grande*/
-        top: 60vh;
-    }
-
-
-   
-    
-    .mini-photos{
-        width: 15vw; 
-        
-    }
    
     footer{
       
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
+       
     }
 
 
@@ -467,8 +336,8 @@ footer{
     }
     .img-mobile{
         display:block ;
+        
     }
-
 
 
 
@@ -487,17 +356,7 @@ footer{
 
     }
         
-    aside.slider{/*box do aside/ ao redor do slider*/
-        
-        height:400px;
-       
-        margin: 0 20px;
-     
-        
-    
-    } 
-
-  
+   
 
 
 }
