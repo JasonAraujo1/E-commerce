@@ -37,7 +37,7 @@ body *{
 .conteudo{
     flex-direction: row;
     display: flex;
-    
+    margin-top: 40px;/*distância aside e main do header*/
 }
 
 /*HEADER*/
@@ -242,25 +242,30 @@ main a{
 /*ASIDE*/
 aside{
     flex: 2;
-    position: relative;
+    
+  
+    
 }
 
-aside.slider{
-    margin: 0;
+aside.slider{/*box do aside/ ao redor do slider*/
+   
     width: 100%;
-    height: auto;
-    padding: 0 ;
+    height:600px;
+    padding: 0  ;
     overflow: hidden;
+     border-radius: 20px;
+  
+    margin:0 20px;
+   
 } 
 
 .slider-content{
     width: 400%;
-    height: auto;
     display: flex;
 
 }
 
-.slider-content input{
+.slider-content input, .img-mobile{
     display: none;
     
 }
@@ -275,20 +280,25 @@ aside.slider{
 }
 
 .slide-box img{/*imagem grande slider*/
-    width: 40vw;
-    border-radius: 20px;
-   
+    width: 100%;
+
+   border-radius: 20px;
+    min-width: 90%;
+    
+    
+  
     
 }
 
-.nav-manual, .nav-auto{/*linha de navegação manual*/
+.nav-manual, .nav-auto{/*linha da navegação manual*/
     position: absolute;
     width:68vw; /*alinhamento das mini-imagens com a imagem grande*/
     
     display: flex;
     justify-content: center;
-    gap: 10px;
-    bottom:2vh;
+    gap: 10px;/*distancia entre as mini-images*/
+    top: 80vh;
+    
     
     
 }
@@ -296,14 +306,15 @@ aside.slider{
 .nav-manual .manual-btn, .nav-auto div{/*linha em baixo das mini imagens*/
 
     padding: 2px; /*largura da linha*/
-    margin: 5px 0;/*distância da linha da mini image*/
-   
+    margin: 8px 0;/*distância da linha da mini image*/
+    
 }
 
 .nav-auto div{
     
     width: 7vw;
-    margin:0 0.5vw;/*centralização linha vermelha*/
+    margin: 0 11px;/*centralização linha vermelha*/
+   
     
 }
 
@@ -313,12 +324,12 @@ aside.slider{
     border-radius: 10px;
     opacity: 60%;
     
+    
 }
 
-
-
+/*linha de transição mini-images*/
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{/*quando a classe 'radio estiver marcada, vai acontecer isso com as classes nav-auto e auto-btn*/
-    background-color: red;
+    background-color:var(--btn-orange);
     transition: 1s;
 
 }
@@ -345,7 +356,10 @@ aside.slider{
 /*FOOTER*/
 footer{
     background-color: yellow;
-  
+   
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
 
 
@@ -378,9 +392,9 @@ footer{
 
 
 /*MEDIA SCREEN*/
-@media screen and (max-width:500px) {
+@media screen and (max-width:1000px) {
     .container{
-        position: relative;
+       
         
     }
 
@@ -420,22 +434,72 @@ footer{
 
     .nav-auto div{
     
-        width: 7vw;
-        margin:0 0.09vw;/*centralização linha vermelha*/
-        margin: 0 18px;
-        
-    }
-    .slide-box img{/*imagem grande slider*/
-        width: 60vw;
+        width: 14vw;
+        margin: 0 4px;/*centralização linha vermelha*/
         
     }
 
+    
+    .nav-manual, .nav-auto{/*linha da navegação manual*/
+        
+        width:55vw; /*alinhamento das mini-imagens com a imagem grande*/
+        top: 60vh;
+    }
+
+
+   
     
     .mini-photos{
         width: 15vw; 
         
     }
    
+    footer{
+      
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+
+
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display:block ;
+    }
+
+
+
+
+    main h1{/*50% off*/
+       
+        font-size: 12vw; 
+        max-width: 50%;
+       margin: 30px;     
+      
+    }
+
+    main h2{/*'sale'/'discount...'*/
+       
+     font-size: 4vw; 
+     max-width: 100%;
+
+    }
+        
+    aside.slider{/*box do aside/ ao redor do slider*/
+        
+        height:400px;
+       
+        margin: 0 20px;
+     
+        
+    
+    } 
+
+  
+
+
 }
 
 
