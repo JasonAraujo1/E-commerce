@@ -21,8 +21,13 @@ body *{
     --body-bg:#FFFFFF;
     --text-color-gray:#666A74;
     --gray-light:#B8B7B4;
-    --orange:#F39050;
+    --gray-ultra-light:#e6e5e2;
     --btn-orange:#FB6D5D;
+
+    --orange:#F39050;
+    --yellow:#fed48b;
+    --blue:#9da9ec;
+    --bege:#F7ECDB;
 }
 
 /*ALL*/
@@ -247,11 +252,46 @@ main a{
 
 /*FOOTER*/
 footer{
-    background-color: yellow;
+    background-color:var(--body-bg);
    
     position: absolute;
     bottom: 0;
     width: 100vw;
+
+    border-top: 1px solid var(--gray-ultra-light);
+
+    padding: 20px 10px;
+
+    
+   
+    
+}
+
+footer button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline;
+   margin:10px 10px;
+}
+
+#sofa{
+    background-color:var(--bege) ;
+}
+
+#accessories{
+    background-color: var(--yellow);
+}
+
+#wClothing{
+    background-color: var(--blue);
+}
+
+#mClothing{
+    background-color: var(--orange);
 }
 
 
