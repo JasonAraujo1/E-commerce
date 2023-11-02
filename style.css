@@ -7,7 +7,6 @@
 body{
     height: 100vh;
     background-color: var(--body-bg);
-    
 
 }
 
@@ -27,6 +26,7 @@ body *{
     --orange:#F39050;
     --yellow:#fed48b;
     --blue:#9da9ec;
+    --blue-strong:rgb(51, 61, 119);
     --bege:#F7ECDB;
 }
 
@@ -242,10 +242,14 @@ main a{
     top: 50%;
     display: flex;
     padding-left:30px;
-    
+    display: flex;
+   
 }
 
-
+main button, .txt-buy{
+    display: flex;
+   padding-bottom: 20px;/*alinhamento span 'buy' com o icon */
+}
 
 
 
@@ -257,42 +261,97 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100vw;
-
+    height: 10vh;
     border-top: 1px solid var(--gray-ultra-light);
     
-    padding: 20px 10px;
-
+    padding: 10px 10px;
     
-   
+    display: flex;
+    
+     overflow: hidden;
+    
+     opacity: 80%;
     
 }
+
+
 
 footer button{
     border: none;
     border-radius: 10px;
-    padding: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    display: inline;
-   margin:10px 10px;
+    margin:10px 10px;
+    cursor: pointer;
+
+    max-height: 50px;
+   
 }
+
+.icons-footer{/*buttons inline*/
+    display: flex;
+    margin: auto;
+    
+    
+}
+
+footer button, span{/*alinhamento icons com texto*/
+display: flex;   
+padding: 15px 8px;/*distância do texto/icons*/
+font-weight: 700;/*peso das letras buttons*/
+
+}
+
+.video-container {
+    margin: auto;
+
+}
+
+iframe {
+    border-radius: 10px;
+    height: 80px;
+   
+
+    
+}
+
+
 
 #sofa{
     background-color:var(--bege) ;
+    color: var(--blue-strong);
 }
 
 #accessories{
     background-color: var(--yellow);
+    color: var(--blue-strong);
 }
 
 #wClothing{
     background-color: var(--blue);
+    color:var(--body-bg);
 }
 
 #mClothing{
     background-color: var(--orange);
+    color: var(--body-bg);
 }
+
+
+.bi-arrow-right-square-fill{
+   font-size: 60px;
+   color: black;
+}
+
+
+
+.next-arrow-icon{
+    margin: auto 10px;
+}
+
+
+
 
 
 
@@ -313,12 +372,51 @@ footer button{
     transition: 0.5s;
     opacity:1;
 }
-
 .mini-photos:not(hover){
     transition: 0.5s;
 }
 
 
+footer:hover{
+    height: 16vh;
+    transition: 0.5s;
+    opacity: 1;   
+    
+}
+footer:not(hover){
+    transition: 0.5s;
+}
+
+
+
+
+.btn-buy:hover,
+.next-arrow-icon:hover,
+#sofa:hover,
+#accessories:hover,
+#wClothing:hover,
+#mClothing:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.btn-buy:not(hover),
+.next-arrow-icon:not(hover),
+#sofa:not(hover),
+#accessories:not(hover),
+#wClothing:not(hover),
+#mClothing:not(hover){
+   
+    transition: 0.5s;
+}
+
+
+iframe:hover {
+  
+}
+iframe:not(hover) {
+    
+    
+}
 
 
 
@@ -371,10 +469,10 @@ footer button{
     }
 
 
-    .img-desktop{
+    .desktop{
         display: none;
     }
-    .img-mobile{
+    .mobile{
         display:block ;
         
     }
@@ -396,8 +494,19 @@ footer button{
 
     }
         
-   
+    .video-container {
+      
+      
+    }
 
+    iframe {
+        width: 14vh;
+        
+       
+       
+    }
+    
+    
 
 }
 

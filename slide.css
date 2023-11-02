@@ -30,7 +30,7 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
 }
 
-.slider-content input, .img-mobile{
+.slider-content input, .mobile{
     display: none;
     
 }
@@ -150,10 +150,10 @@ aside.slider{/*box do aside/ ao redor do slider*/
    
    
 
-    .img-desktop{
+    .desktop{
         display: none;
     }
-    .img-mobile{
+    .mobile{
         display:block ;
     }
 

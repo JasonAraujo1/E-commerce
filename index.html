@@ -96,18 +96,18 @@
                     <input type="radio" name="btn-radio" id="radio3">
 
                     <div class="slide-box primeiro">
-                        <img class="img-desktop" src="./assets/sapato.jpg" alt="shoes image">
-                        <img class="img-mobile" src="./assets/sapato-phone.jpg" alt="shoes image">
+                        <img class="desktop" src="./assets/sapato.jpg" alt="shoes image">
+                        <img class="mobile" src="./assets/sapato-phone.jpg" alt="shoes image">
                     </div>
 
                     <div class="slide-box">
-                        <img class="img-desktop" src="./assets/camera.jpg" alt="camera image">
-                        <img class="img-mobile" src="./assets/camera-phone.jpg" alt="camera image">
+                        <img class="desktop" src="./assets/camera.jpg" alt="camera image">
+                        <img class="mobile" src="./assets/camera-phone.jpg" alt="camera image">
                     </div>
 
                     <div class="slide-box">
-                        <img class="img-desktop" src="./assets/sucos.jpg" alt="juices image">
-                        <img class="img-mobile" src="./assets/sucos-phone.jpg" alt="juices image">
+                        <img class="desktop" src="./assets/sucos.jpg" alt="juices image">
+                        <img class="mobile" src="./assets/sucos-phone.jpg" alt="juices image">
                     </div>
 
                     <div class="nav-auto">
@@ -140,17 +140,29 @@
         
 
 
-        <footer>
+        <footer id="myFooter">
            <!--VÍDEO-->
+           <div class="video-container">
+            <iframe id="myIframe" src=" https://media.gettyimages.com/id/1437468695/pt/v%C3%ADdeo/young-african-american-woman-unpacks-packages-at-home.mp4?s=mp4-640x640-gi&k=20&c=f3ERtKme3RAi0kFOBLrEfujWzfrQG4Z1y2YgdGxyE-E=" frameborder="0" allowfullscreen controls></iframe>
+           </div>
+
             <div class="icons-footer">
-                <button id="sofa"><img src="./assets/sofa.svg" alt="" class="sofa">Home & Garden</button>
-                <button id="accessories"><img src="./assets/watch.svg" alt="">Accessories</button>
-                <button id="wClothing"><img src="./assets/Dress.svg" alt="">Woman's Clothing</button>
-                <button id="mClothing"><img src="./assets/tshirt.svg" alt="">Man's Clothing</button>
+                <button class="desktop" id="sofa"><img src="./assets/sofa.svg" alt="" class="sofa"><span> Home & Garden</span></button>
+                <button class="desktop" id="accessories"><img src="./assets/watch.svg" alt=""><span> Accessories</span></button>
+                <button class="desktop" id="wClothing"><img src="./assets/Dress.svg" alt=""><span>Woman's Clothing</span> </button>
+                <button class="desktop" id="mClothing"><img src="./assets/tshirt.svg" alt=""><span>Man's Clothing</span></button>
+
+                <button class="mobile" id="sofa"><img src="./assets/sofa.svg" alt="" class="sofa"></button>
+                <button class="mobile" id="accessories"><img src="./assets/watch.svg" alt=""></button>
+                <button class="mobile" id="wClothing"><img src="./assets/Dress.svg" alt=""></button>
+                <button class="mobile" id="mClothing"><img src="./assets/tshirt.svg" alt=""></button>
             </div>
 
             <div class="next-arrow-icon">
-                <i class="bi bi-arrow-right-square-fill"></i>
+                <a class="arrow-link" href="#">
+                        <i class="bi bi-arrow-right-square-fill"></i>
+                </a>
+               
             </div>
         </footer>
 
@@ -167,21 +179,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="slide.js"></script>  
+  <script src="footer.js"></script>
 </body>
 </html>
