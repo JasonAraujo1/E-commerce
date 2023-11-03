@@ -432,7 +432,7 @@ iframe:not(hover) {
         
         width: 160px;
     }
-    
+
     .formulario{
         position: absolute;
         margin-top: 20px;
@@ -490,6 +490,15 @@ iframe:not(hover) {
  
     }
     
+
+
+    .conteudo{
+        flex-direction: column;
+        display: flex;
+        margin-top: 40px;/*distância aside e main do header*/
+        max-height: 60vh;
+        position: relative;
+    }
     
 
 }
