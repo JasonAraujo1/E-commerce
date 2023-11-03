@@ -197,11 +197,8 @@ font-size: 8vw;
 max-width: 50%;
 color:var(--text-color-gray);
 
-
-
-
-
 }
+
 main h2{/*'sale'/'discount...'*/
 font-family: 'Playfair Display', serif;
 font-weight: 400; 
@@ -230,10 +227,7 @@ main a{
     border-radius: 10px;
     position: relative;
     width: 100px;
-    cursor: pointer;
-
-
-    
+    cursor: pointer; 
 }
 
 .txt-buy{
@@ -311,9 +305,7 @@ font-weight: 700;/*peso das letras buttons*/
 iframe {
     border-radius: 10px;
     height: 80px;
-   
 
-    
 }
 
 
@@ -440,6 +432,7 @@ iframe:not(hover) {
         
         width: 160px;
     }
+    
     .formulario{
         position: absolute;
         margin-top: 20px;
@@ -462,12 +455,6 @@ iframe:not(hover) {
         margin-left:30px;
     }
 
-   
-    footer{
-      
-       
-    }
-
 
     .desktop{
         display: none;
@@ -481,9 +468,9 @@ iframe:not(hover) {
 
     main h1{/*50% off*/
        
-        font-size: 12vw; 
-        max-width: 50%;
-       margin: 30px;     
+     font-size: 12vw; 
+     max-width: 50%;
+     margin: 30px;     
       
     }
 
@@ -494,16 +481,13 @@ iframe:not(hover) {
 
     }
         
-    .video-container {
-      
-      
+    footer button{
+        margin: 10px 5px;
     }
 
     iframe {
         width: 14vh;
-        
-       
-       
+ 
     }
     
     
