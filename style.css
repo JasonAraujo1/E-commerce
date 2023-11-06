@@ -34,6 +34,7 @@ body *{
 .container{
  display: flex;
  flex-direction: column;
+
  
 }
 
@@ -377,7 +378,7 @@ iframe {
 footer:hover{
     height: 16vh;
     transition: 0.5s;
-   
+    opacity: 1;   
     
 }
 footer:hover{

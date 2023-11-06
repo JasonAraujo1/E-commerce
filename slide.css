@@ -131,13 +131,13 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
     .conteudo{
       
-        max-height: 85vh;/*distância mini images das images grandes*/
+        max-height: 70vh;/*distância mini images das images grandes*/
         position: relative;
     }
     aside.slider{/*box do aside/ ao redor do slider*/
    
         width: 100%;
-        max-width: 80vw;
+        max-width: 85vw;/*tamanho da imagem grande*/
         height:150px;
  
         margin: 5px 40px;
@@ -148,6 +148,7 @@ aside.slider{/*box do aside/ ao redor do slider*/
     
     .mini-photos{
         width: 15vw;/*tamanho mini images*/
+        margin-bottom: 15vh;
     }
 
     .nav-manual, .nav-auto{/*linha da navegação manual*/
@@ -165,7 +166,7 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
     .nav-auto{/*linha distância do mini images*/
        
-        bottom: -2%;   
+        bottom: -4%;   
         transform: translateY(-50%);
         
     }
@@ -178,8 +179,31 @@ aside.slider{/*box do aside/ ao redor do slider*/
         
     }
  
+    .slide-box img{/*imagem grande slider*/
+      
+       
+        width: 90%;
+        
+    }
+    
+
+    .slider-content{
+
+         height: 100%;/*box ao redor das imagem grande*/
+   
+    }
+
+
+    .slide-box img{/*imagem grande slider*/
+     height:100%;/* imagem grande height*/
 
     
+    }
+
+
+
+
+
 
     }
 
