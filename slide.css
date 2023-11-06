@@ -137,7 +137,7 @@ aside.slider{/*box do aside/ ao redor do slider*/
     aside.slider{/*box do aside/ ao redor do slider*/
    
         width: 100%;
-        max-width: 85vw;/*tamanho da imagem grande*/
+        max-width: 80vw;/*tamanho da imagem grande*/
         height:150px;
  
         margin: 5px 40px;
