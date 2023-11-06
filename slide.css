@@ -131,23 +131,23 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
     .conteudo{
       
-        max-height: 160vh;
+        max-height: 85vh;/*distância mini images das images grandes*/
         position: relative;
     }
     aside.slider{/*box do aside/ ao redor do slider*/
    
         width: 100%;
         max-width: 80vw;
-        max-height:600px;
+        height:150px;
  
         margin: 5px 40px;
+       
      
     } 
 
     
     .mini-photos{
         width: 15vw;/*tamanho mini images*/
-    
     }
 
     .nav-manual, .nav-auto{/*linha da navegação manual*/

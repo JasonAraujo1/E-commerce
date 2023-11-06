@@ -34,7 +34,6 @@ body *{
 .container{
  display: flex;
  flex-direction: column;
-
  
 }
 
@@ -378,6 +377,12 @@ iframe {
 footer:hover{
     height: 16vh;
     transition: 0.5s;
+   
+    
+}
+footer:hover{
+    height: 16vh;
+    transition: 0.5s;
     opacity: 1;   
     
 }
@@ -421,9 +426,9 @@ iframe:not(hover) {
 
 /*MEDIA SCREEN*/
 @media screen and (max-width:900px) {
-    .container{
+    .conteudo{
        
-        
+        height: 100vh;
     }
 
     header{
@@ -484,6 +489,13 @@ iframe:not(hover) {
      max-width: 100%;
 
     }
+    footer{
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        padding: 2px;
+        
+    }
         
     footer button{
         margin: 10px 5px;
@@ -500,7 +512,6 @@ iframe:not(hover) {
         flex-direction: column;
         display: flex;
         margin-top: 0;/*distância aside e main do header*/
-        max-height: 60vh;
         position: relative;
     }
     
