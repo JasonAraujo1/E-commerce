@@ -200,6 +200,7 @@ color:var(--text-color-gray);
 }
 
 main h2{/*'sale'/'discount...'*/
+
 font-family: 'Playfair Display', serif;
 font-weight: 400; 
 font-size: 2vw; 
@@ -281,6 +282,11 @@ footer button{
 
     max-height: 50px;
    
+}
+
+.mobile{
+    display:none ;
+    
 }
 
 .icons-footer{/*buttons inline*/
@@ -468,9 +474,9 @@ iframe:not(hover) {
 
     main h1{/*50% off*/
        
-     font-size: 12vw; 
+     font-size: 22vw; 
      max-width: 50%;
-     margin: 30px;     
+     
       
     }
 
@@ -495,7 +501,7 @@ iframe:not(hover) {
     .conteudo{
         flex-direction: column;
         display: flex;
-        margin-top: 40px;/*distância aside e main do header*/
+        margin-top: 0;/*distância aside e main do header*/
         max-height: 60vh;
         position: relative;
     }

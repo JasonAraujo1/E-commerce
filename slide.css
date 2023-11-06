@@ -1,26 +1,25 @@
 /*ASIDE*/
 aside{
     flex: 2;
-    
    
+   
+ 
     
 }
 
 aside.slider{/*box do aside/ ao redor do slider*/
    
     width: 100%;
-    
+    max-width: 50vw;
+    max-height:600px;
+
     padding: 0  ;
     overflow: hidden;
     border-radius: 20px;
         
-    max-height:600px;
-   
     margin: 0 20px;
  
-    max-width: 50vw;
-   
-    
+  
 } 
 
 .slider-content{
@@ -30,8 +29,9 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
 }
 
-.slider-content input, .mobile{
+.slider-content input{
     display: none;
+    
     
 }
 
@@ -129,73 +129,23 @@ aside.slider{/*box do aside/ ao redor do slider*/
 @media screen and (max-width:900px) {
     
 
-    .nav-auto div{/*espaço entre linhas do mini images*/
-       margin: 0;
-       padding: 1px 32px;
-     
-    }
-
-    
-    .nav-manual, .nav-auto{/*linha da navegação manual*/
-        
-        width:49vw; /*alinhamento das mini-imagens com a imagem grande width*/    
-       
-       
-    }
-
-    
-    .mini-photos{
-        width: 15vw; 
+    .conteudo{
       
-        
+        max-height: 160vh;
+        position: relative;
     }
-   
-   
-
-    .desktop{
-        display: none;
-    }
-    .mobile{
-        display:block ;
-    }
-
-
-
     aside.slider{/*box do aside/ ao redor do slider*/
-        
+   
+        width: 100%;
+        max-width: 80vw;
+        max-height:600px;
     
+     
+            
+        margin: 5px 40px;
+     
+      
     } 
-
-    
-    .slide-box img{
-       width: 140%;
-       height:100%;
-       border-radius: 20px;
-       min-width: 98%;
-       overflow: hidden;
-       width: 90%;
-       
-    }
-
-    
-    .nav-manual, .nav-auto{/*linha da navegação manual*/
-        position: absolute;
-    
-        bottom: 0;   
-        transform: translateY(10%); /*alinhamento das mini-imagens com a imagem grande height*/   
-    
-
-        
-    }
-
-    .nav-auto{/*linha distância do mini images*/
-        position: absolute;
-    
-        bottom: 15%;   
-        transform: translateY(-50%);
-        
-    }
-
 
 
     }
