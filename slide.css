@@ -87,7 +87,7 @@ aside.slider{/*box do aside/ ao redor do slider*/
 
 .nav-auto div{
     
-    width: 7vw;
+    width: 7vw;/*tamanhao da linha vermalha*/
     margin: 0 11px;/*centralização linha vermelha*/
    
     
@@ -139,14 +139,47 @@ aside.slider{/*box do aside/ ao redor do slider*/
         width: 100%;
         max-width: 80vw;
         max-height:600px;
-    
-     
-            
+ 
         margin: 5px 40px;
      
-      
     } 
 
+    
+    .mini-photos{
+        width: 15vw;/*tamanho mini images*/
+    
+    }
+
+    .nav-manual, .nav-auto{/*linha da navegação manual*/
+        width:80vw; /*alinhamento das mini-imagens com a imagem grande*/
+        
+        
+    }
+
+    .nav-manual .manual-btn, .nav-auto div{/*linha em baixo das mini imagens*/
+
+        padding: 1px; /*largura da linha*/
+        margin: 8px 0;/*distância da linha da mini image*/
+     
+    }
+
+    .nav-auto{/*linha distância do mini images*/
+       
+        bottom: -2%;   
+        transform: translateY(-50%);
+        
+    }
+
+    .nav-auto div{
+    
+        width: 14vw;/*tamanhao da linha vermalha*/
+        margin: 0 3px;/*centralização linha vermelha    OBS: pode usar números negativos para ajustar*/
+       
+        
+    }
+ 
+
+    
 
     }
 

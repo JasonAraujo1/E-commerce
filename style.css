@@ -265,7 +265,7 @@ footer{
     
      overflow: hidden;
     
-     opacity: 80%;
+     opacity: 30%;
     
 }
 
@@ -429,7 +429,7 @@ iframe:not(hover) {
     header{
         width: 90%;
         max-width: 100%;
-        padding: 30px 0;
+        padding: 10px 0;
         padding-bottom: 90px;
       
     }  
@@ -475,9 +475,7 @@ iframe:not(hover) {
     main h1{/*50% off*/
        
      font-size: 22vw; 
-     max-width: 50%;
-     
-      
+     max-width: 50%;      
     }
 
     main h2{/*'sale'/'discount...'*/
