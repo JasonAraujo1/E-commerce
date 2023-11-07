@@ -1,7 +1,12 @@
-const icons = document.querySelectorAll("#clickColor");
+var clickColor = document.querySelectorAll('.clickColor')
 
-        icons.forEach((icon) => {
-            icon.addEventListener("click", () => {
-                icon.classList.toggle("icon-color-change");
-            });
-        });
+function selectItens(){
+    clickColor.forEach((item)=>
+    item.classList.remove('ativo')
+    )
+    this.classList.add('ativo')
+}
+
+clickColor.forEach((item)=>
+    item.addEventListener('click', selectItens)
+)

@@ -22,6 +22,7 @@ body *{
     --gray-light:#B8B7B4;
     --gray-ultra-light:#e6e5e2;
     --btn-orange:#FB6D5D;
+    --btn-orange-darker:#f35645;
 
     --orange:#F39050;
     --yellow:#fed48b;
@@ -60,12 +61,14 @@ header{
     padding: 40px 0;
 
     font-weight: 700;
-    color: var(--text-color-gray);
+    color: var(--text-color-gray);/*cor elementos header*/
     font-size: 12px;
 
     position: relative;
     
     flex: 1;
+
+    border-bottom: 1px solid var(--gray-ultra-light);
 }   
 
 .logo-header-div{
@@ -77,7 +80,7 @@ header{
   
     
 }
-.icon-color-change {
+.ativo{
     color: var(--btn-orange); /* Cor desejada ao clicar */
 }
 
@@ -87,9 +90,15 @@ header{
     gap: 30%;
     cursor: pointer;
     width: 20vw;
-
-
+    
   
+  
+}
+
+.menu ul a {
+    text-decoration: none;
+   color: var(--text-color-gray);
+    
 }
 
 .icons ul button{
@@ -358,9 +367,14 @@ iframe {
 /*HOVER*/
 
 .menu ul li:hover{
-    color: black;
+    text-decoration: underline;
+
     transition: 0.2s;
 }
+.menu ul li:not(hover){
+    transition: 0.5s;
+}
+
 
 .icons ul button:hover{
     color: black;
@@ -438,7 +452,7 @@ iframe:not(hover) {
         width: 90%;
         max-width: 100%;
         padding: 30px 0px 50px 0;
-        border-bottom: 1px solid var(--gray-ultra-light);
+       
       
     }  
 
